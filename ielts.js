@@ -185,10 +185,8 @@
       })
   }
 
-  function queryTestSeat(d, c, b, a) {
-    $("#productCode").val(d);
-    $("#queryCity").val(c);
-    $("#queryTestDate").val(b);
+  function queryTestSeat(productCode, queryCity, queryTestDate, a) {
+    //productCode=IELTSPBT&queryCity=320100&queryTestDate=2022-09-03&queryActionType=Order.QueryOrder&neeaAppId=&_csrf=af4debd6-27ac-4d29-afb7-b5dd40772405
     $.ajax({
       type: "POST",
       headers: {
@@ -196,7 +194,13 @@
       },
       dataType: "json",
       url: "queryTestSeats",
-      data: $("#frmQuerySeat").serialize(),
+      data: {
+        productCode,
+        queryCity,
+        queryTestDate,
+        queryActionType: "Order.QueryOrder",
+        _csrf: $("meta[name='_csrf']").attr("content")
+      },
       complete:function(msg){
         ajax_count--;
       },
