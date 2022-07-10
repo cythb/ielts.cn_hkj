@@ -217,7 +217,7 @@
           var seat = testSeats[i];
           for (var j=0; j<seat.testSeat.length; j++) {
             var item = seat.testSeat[j];
-            var seat_id = item.seatId;
+            var seat_id = item.centerGuid+':'+test_day;
             var time = test_day;
             var type = item.levelCode;
             var location = item.centerName;
