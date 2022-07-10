@@ -11,5 +11,5 @@
 ## 使用方法
 在Chrome手动新建一个书签，随便写个名字，地址栏中粘贴下面的代码。
 ```javascript
-javascript:(function(r){!!r?r():(function(d){s=d.createElement('script');s.setAttribute('src','https://raw.githubusercontent.com/mydansun/ielts.cn_hkj/master/ielts.js?v='+Date.parse(new Date()));s.setAttribute('charset','utf-8');d.getElementsByTagName('head')[0].appendChild(s)})(document)})(window.onlyke)
+javascript:(function(r){!!r?r():(function(d){s=d.createElement(%27script%27);s.setAttribute(%27src%27,%27https://cdn.jsdelivr.net/gh/cythb/ielts.cn_hkj@bugfix04/ielts.js?v=%27+Date.parse(new Date()));s.setAttribute(%27charset%27,%27utf-8%27);d.getElementsByTagName(%27head%27)[0].appendChild(s)})(document)})(window.onlyke)
 ```
