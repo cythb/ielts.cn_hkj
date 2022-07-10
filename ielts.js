@@ -35,8 +35,8 @@
 	$("body").css("overflow-y","hidden");
 
 	var product = "IELTSPBT";
-	var city = [];
-	var date = [];
+	var city = ['320100'];
+	var date = ['2022-08-20', '2022-08-27'];
 	var select = [];
 	var ajax_count = 0;
 	var notice = [];
